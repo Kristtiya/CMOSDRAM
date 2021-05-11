@@ -1,0 +1,47 @@
+magic
+tech sky130A
+timestamp 1614907548
+<< locali >>
+rect -25 875 25 895
+rect 460 875 500 895
+rect 940 875 980 895
+rect 1420 875 1460 895
+rect -25 820 25 840
+rect 1895 820 1920 840
+rect -205 715 -180 735
+<< metal1 >>
+rect -205 580 -180 845
+rect -205 85 -180 460
+rect -205 0 20 40
+use DFF  DFF_3 ~/Desktop/MAD_VLSI/MiniProject2-CSRLDFF/Magic
+timestamp 1614907382
+transform 1 0 1715 0 1 430
+box -275 -430 205 465
+use DFF  DFF_2
+timestamp 1614907382
+transform 1 0 1235 0 1 430
+box -275 -430 205 465
+use DFF  DFF_1
+timestamp 1614907382
+transform 1 0 755 0 1 430
+box -275 -430 205 465
+use DFF  DFF_0
+timestamp 1614907382
+transform 1 0 275 0 1 430
+box -275 -430 205 465
+use inverter  inverter_0 ~/Desktop/MAD_VLSI/MiniProject2-CSRLDFF/Magic
+timestamp 1614901737
+transform 1 0 -485 0 1 10
+box 280 75 485 885
+<< labels >>
+rlabel metal1 -205 20 -205 20 7 clk
+rlabel metal1 -205 280 -205 280 7 VN
+rlabel metal1 -205 710 -205 710 7 VP
+rlabel locali -205 725 -205 725 7 D
+rlabel locali 0 830 0 830 1 Dn
+rlabel locali 480 885 480 885 1 Q3
+rlabel locali 960 885 960 885 1 Q2
+rlabel locali 1440 885 1440 885 1 Q1
+rlabel space 1920 885 1920 885 3 Q0
+rlabel locali 1920 830 1920 830 3 Qn0
+<< end >>

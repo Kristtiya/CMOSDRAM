@@ -1,0 +1,179 @@
+timestamp 1614907548
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use DFF DFF_3 1 0 3430 0 1 860
+use DFF DFF_2 1 0 2470 0 1 860
+use DFF DFF_1 1 0 1510 0 1 860
+use DFF DFF_0 1 0 550 0 1 860
+use inverter inverter_0 1 0 -970 0 1 20
+node "clk" 1 240.7 -410 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 1060 0 0 0 0 0 0 0 0 0 0
+node "VN" 2 352.375 -410 170 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37500 1600 0 0 0 0 0 0 0 0 0 0
+node "VP" 1 253.725 -410 1160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26500 1160 0 0 0 0 0 0 0 0 0 0
+node "D" 15 51.35 -410 1430 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qn0" 15 51.35 3790 1640 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "Dn" 31 80.7 -50 1640 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q1" 24 68.96 2840 1750 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q2" 24 68.96 1880 1750 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q3" 24 68.96 920 1750 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n50_1750#" 31 80.7 -50 1750 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VP" "D" 23.2
+cap "VN" "clk" 25
+cap "Dn" "li_n50_1750#" 47.1429
+cap "VP" "VN" 9.375
+subcap "D" -227.987
+subcap "Dn" -36.4625
+subcap "li_n50_1750#" -257.337
+cap "DFF_0/a_n40_380#" "DFF_1/a_n500_n700#" 17.6517
+cap "DFF_0/Dn" "DFF_0/a_n390_100#" 43.4338
+cap "DFF_0/Dn" "DFF_0/a_n500_n700#" 206.219
+cap "DFF_1/a_n500_n700#" "DFF_1/VP" 11.55
+cap "DFF_1/D" "DFF_1/a_n470_n440#" 39.897
+cap "DFF_1/a_n390_100#" "DFF_0/a_n40_380#" 3.88235
+cap "DFF_1/Dn" "DFF_1/a_n500_n700#" 43.431
+cap "DFF_0/a_n500_n700#" "DFF_1/VN" 26.587
+cap "DFF_0/a_n390_100#" "DFF_1/VN" 3.41061e-13
+cap "DFF_0/a_n390_100#" "DFF_0/D" 16.7925
+cap "DFF_0/Dn" "DFF_0/a_n470_n440#" 27.9231
+cap "DFF_0/Dn" "DFF_1/VP" 23.76
+cap "DFF_1/Dn" "DFF_1/a_n390_100#" 4.14479
+cap "DFF_1/D" "DFF_1/a_n500_n700#" 319.55
+cap "DFF_0/a_n470_n440#" "DFF_1/VN" 15.2308
+cap "DFF_1/VN" "DFF_1/VP" -9.375
+cap "DFF_0/a_n500_n700#" "DFF_1/VP" 22.8497
+cap "DFF_0/a_n390_100#" "DFF_1/VP" -5.68434e-14
+cap "DFF_1/D" "DFF_1/a_n390_100#" 14.1015
+cap "DFF_0/a_n40_380#" "DFF_1/VP" 2.11538
+cap "DFF_1/a_n470_n440#" "DFF_1/VN" 10.0915
+cap "DFF_1/D" "DFF_1/VN" 10.3321
+cap "DFF_1/a_n500_n700#" "DFF_1/VN" 19.2
+cap "DFF_1/D" "DFF_1/VP" 11.88
+cap "DFF_0/a_n390_100#" "DFF_1/a_n500_n700#" 12.1076
+cap "DFF_1/Dn" "DFF_1/a_n470_n440#" 3.77143
+cap "DFF_1/D" "DFF_1/Qn" 9.28125
+cap "DFF_1/clk" "DFF_1/VN" 180
+subcap "Q3" -840.767
+cap "DFF_2/Dn" "DFF_2/a_n470_n440#" 7.54286
+cap "DFF_0/a_n40_380#" "DFF_1/a_n500_n700#" 17.6517
+cap "DFF_2/Dn" "DFF_2/a_n390_100#" 8.28958
+cap "DFF_1/a_n500_n700#" "DFF_0/a_n390_100#" 9.49461
+cap "DFF_1/Dn" "DFF_1/a_n500_n700#" 14.7283
+cap "DFF_2/Dn" "DFF_1/D" 9.28125
+cap "DFF_1/a_n500_n700#" "DFF_2/VP" 11.55
+cap "DFF_1/a_n390_100#" "DFF_1/D" 14.1015
+cap "DFF_2/D" "DFF_2/Qn" 18.5625
+cap "DFF_2/clk" "DFF_2/VP" 2.30926e-14
+cap "DFF_1/a_n470_n440#" "DFF_1/Dn" 3.77143
+cap "DFF_2/D" "DFF_2/a_n500_n700#" 423.342
+cap "DFF_2/VP" "DFF_1/D" 11.88
+cap "DFF_2/D" "DFF_2/VP" 23.76
+cap "DFF_1/a_n500_n700#" "DFF_0/Qn" 13.5626
+cap "DFF_2/a_n500_n700#" "DFF_2/VN" 29.7
+cap "DFF_2/VP" "DFF_2/VN" -2.84217e-14
+cap "DFF_2/D" "DFF_2/a_n470_n440#" 79.7941
+cap "DFF_1/a_n500_n700#" "DFF_1/D" 188.154
+cap "DFF_2/D" "DFF_2/a_n390_100#" 28.203
+cap "DFF_2/a_n470_n440#" "DFF_2/VN" 20.183
+cap "DFF_1/a_n470_n440#" "DFF_1/D" 39.897
+cap "DFF_1/a_n500_n700#" "DFF_2/VN" -750.765
+cap "DFF_1/a_n40_380#" "DFF_2/a_n500_n700#" 35.3034
+cap "DFF_0/a_n40_380#" "DFF_1/a_n390_100#" 3.88235
+cap "DFF_1/a_n40_380#" "DFF_2/VP" 4.23077
+cap "DFF_2/VN" "DFF_1/D" 10.3321
+cap "DFF_1/a_n470_n440#" "DFF_2/VN" 10.0915
+cap "DFF_2/D" "DFF_2/VN" 20.6643
+cap "DFF_2/Dn" "DFF_2/a_n500_n700#" 58.1593
+cap "DFF_1/a_n390_100#" "DFF_2/a_n500_n700#" 19.3264
+cap "DFF_0/a_n40_380#" "DFF_2/VP" 2.11538
+cap "DFF_1/Dn" "DFF_1/a_n390_100#" 4.14479
+cap "DFF_1/a_n40_380#" "DFF_2/a_n390_100#" 7.76471
+cap "DFF_2/VP" "DFF_2/a_n500_n700#" 23.1
+cap "DFF_3/VN" "DFF_3/a_n470_n440#" 20.183
+cap "DFF_3/VP" "DFF_2/a_n40_380#" 4.23077
+cap "DFF_3/a_n500_n700#" "DFF_2/a_n40_380#" 35.3034
+cap "DFF_3/D" "DFF_3/VP" 23.76
+cap "DFF_3/VN" "DFF_3/Dn" 1.13687e-13
+cap "DFF_3/Dn" "DFF_3/a_n500_n700#" 58.1593
+cap "DFF_3/a_n390_100#" "DFF_2/a_n40_380#" 7.76471
+cap "DFF_3/D" "DFF_3/a_n500_n700#" 423.342
+cap "DFF_3/D" "DFF_3/VN" 20.6643
+cap "DFF_3/VP" "DFF_3/a_n500_n700#" 23.1
+cap "DFF_3/a_n390_100#" "DFF_3/Dn" 8.28958
+cap "DFF_3/VP" "DFF_3/clk" 2.84217e-14
+cap "DFF_2/a_n390_100#" "DFF_3/a_n500_n700#" 19.3264
+cap "DFF_3/Dn" "DFF_3/a_n470_n440#" 7.54286
+cap "DFF_3/D" "DFF_3/a_n390_100#" 28.203
+cap "DFF_3/VN" "DFF_3/a_n500_n700#" 29.7
+cap "DFF_3/VN" "DFF_3/clk" -1.13687e-13
+cap "DFF_3/D" "DFF_3/Qn" 18.5625
+cap "DFF_3/D" "DFF_3/a_n470_n440#" 79.7941
+subcap "Qn0" -4.7755
+subcap "VP" -183.805
+cap "DFF_1/a_n500_n700#" "DFF_1/Dn" 2.2
+cap "DFF_1/clk" "DFF_1/Dn" 3.79864
+cap "DFF_1/Dn" "DFF_1/D" 12.9395
+cap "DFF_1/a_n500_n700#" "DFF_1/D" 7.0625
+cap "DFF_1/VP" "DFF_1/Dn" -3.55271e-15
+cap "DFF_1/VP" "DFF_0/Dn" 2.84217e-14
+cap "DFF_1/VP" "DFF_0/D" -23.2
+cap "DFF_1/VP" "DFF_1/a_n500_n700#" 1.375
+cap "DFF_0/clk" "DFF_0/D" 4.95077
+cap "DFF_0/a_n500_n700#" "DFF_0/Dn" 26.125
+cap "DFF_0/D" "DFF_1/Dn" 8.55556
+cap "DFF_0/Dn" "DFF_0/D" -21.4762
+cap "DFF_1/D" "DFF_1/Dn" 14.8807
+cap "DFF_0/D" "DFF_1/Dn" 9.87556
+cap "DFF_2/a_n500_n700#" "DFF_2/Dn" 4.4
+cap "DFF_2/a_n500_n700#" "DFF_2/VP" 2.75
+cap "DFF_2/clk" "DFF_2/Dn" 7.59729
+cap "DFF_2/VP" "DFF_2/Dn" -2.84217e-14
+cap "DFF_1/clk" "DFF_1/Dn" 3.79864
+cap "DFF_2/D" "DFF_2/a_n500_n700#" 14.125
+cap "DFF_1/D" "DFF_2/Dn" 17.1111
+cap "DFF_1/a_n500_n700#" "DFF_2/VP" 1.375
+cap "DFF_2/D" "DFF_2/Dn" 25.8789
+cap "DFF_2/VP" "DFF_1/Dn" -372.185
+cap "DFF_1/D" "DFF_1/a_n500_n700#" 7.0625
+cap "DFF_1/a_n500_n700#" "DFF_1/Dn" 2.2
+cap "DFF_1/D" "DFF_0/D" 2.27586
+cap "DFF_3/D" "DFF_3/a_n500_n700#" 14.125
+cap "DFF_3/Dn" "DFF_3/VP" -2.84217e-14
+cap "DFF_3/D" "DFF_3/VP" -1.42109e-13
+cap "DFF_3/D" "DFF_3/Dn" 25.8789
+cap "DFF_3/Dn" "DFF_3/clk" 7.59729
+cap "DFF_3/VP" "DFF_3/a_n500_n700#" 2.75
+cap "DFF_3/Dn" "DFF_2/D" 17.1111
+cap "DFF_3/Dn" "DFF_3/a_n500_n700#" 4.4
+merge "DFF_0/clk" "clk" -32.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0
+merge "clk" "DFF_1/clk"
+merge "DFF_1/clk" "DFF_2/clk"
+merge "DFF_2/clk" "DFF_3/clk"
+merge "DFF_3/VN" "DFF_2/VN" -1041.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15000 -7600 0 0 0 0 0 0 0 0 0 0
+merge "DFF_2/VN" "inverter_0/VN"
+merge "inverter_0/VN" "VN"
+merge "VN" "DFF_0/VN"
+merge "DFF_0/VN" "DFF_1/VN"
+merge "DFF_1/VN" "VSUBS"
+merge "DFF_1/Q" "DFF_2/D" -65.06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24800 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_2/D" "Q2"
+merge "DFF_2/Qn" "DFF_3/Dn" -63.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45200 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_2/Q" "DFF_3/D" -65.06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24800 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_3/D" "Q1"
+merge "DFF_0/Qn" "DFF_1/Dn" -76.575 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59000 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/VP" "DFF_0/VP" -1315.51 0 0 0 0 -218700 -3200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -295200 -3430 0 0 0 0 0 0 0 0 0 0
+merge "DFF_0/VP" "DFF_1/VP"
+merge "DFF_1/VP" "VP"
+merge "VP" "DFF_2/VP"
+merge "DFF_2/VP" "DFF_3/VP"
+merge "inverter_0/Y" "DFF_0/Dn" -102.977 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4300 -360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_0/Dn" "Dn"
+merge "DFF_0/Q" "DFF_1/D" -73.6625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15500 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_1/D" "Q3"
+merge "DFF_3/Qn" "Qn0" -51.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 -220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/A" "DFF_0/D" -120.287 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30500 -540 0 0 0 0 0 0 0 0 0 0 0 0
+merge "DFF_0/D" "li_n50_1750#"
+merge "li_n50_1750#" "D"
+merge "DFF_1/Qn" "DFF_2/Dn" -63.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45200 -80 0 0 0 0 0 0 0 0 0 0 0 0
