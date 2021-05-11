@@ -4,61 +4,74 @@ K {}
 V {}
 S {}
 E {}
-N -120 -75 210 -75 { lab=VP}
-N 210 -75 210 0 { lab=VP}
-N 150 -40 150 -0 { lab=#net1}
+N -120 -150 210 -150 { lab=VP}
+N 210 -150 210 0 { lab=VP}
 N -120 290 465 290 { lab=VN}
 N -15 160 -15 290 { lab=VN}
 N 105 160 105 290 { lab=VN}
 N 225 160 225 290 { lab=VN}
-N 45 -40 150 -40 { lab=#net1}
-N 45 -40 45 0 { lab=#net1}
-N -15 0 -15 10 { lab=Q0}
-N -15 10 45 10 { lab=Q0}
-N 45 10 45 160 { lab=Q0}
-N 105 0 105 10 { lab=Q1}
-N 165 10 165 160 { lab=Q1}
-N 105 10 165 10 { lab=Q1}
 N 345 160 345 290 { lab=VN}
 N 465 160 465 290 { lab=VN}
-N 270 -40 270 0 { lab=#net2}
-N 270 -40 390 -40 { lab=#net2}
-N 390 -40 390 -0 { lab=#net2}
-N 330 0 330 15 { lab=Q2}
-N 285 15 330 15 { lab=Q2}
-N 285 15 285 160 { lab=Q2}
-N 450 -0 450 15 { lab=Q3}
-N 405 15 450 15 { lab=Q3}
-N 405 15 405 160 { lab=Q3}
-N 15 130 75 130 { lab=A0}
-N 15 -30 15 130 { lab=A0}
-N 135 130 195 130 { lab=A0n}
-N 105 130 135 130 { lab=A0n}
-N 75 -30 75 10 { lab=A0n}
-N 75 10 95 10 { lab=A0n}
-N 95 10 95 130 { lab=A0n}
-N 95 130 105 130 { lab=A0n}
-N 255 130 315 130 { lab=A1}
-N 360 -30 360 130 { lab=A1}
-N 315 130 360 130 { lab=A1}
-N 375 130 435 130 { lab=A1n}
-N 435 25 435 130 { lab=A1n}
-N 420 25 435 25 { lab=A1n}
-N 420 -30 420 25 { lab=A1n}
-N -65 120 435 120 { lab=A1n}
-N -65 90 360 90 { lab=A1}
-N -65 60 95 60 { lab=A0n}
-N -65 35 15 35 { lab=A0}
-N 45 35 480 35 { lab=Q0}
-N 165 55 480 55 { lab=Q1}
-N 285 75 480 75 { lab=Q2}
-N 405 95 480 95 { lab=Q3}
-N 180 -30 180 90 { lab=A1}
-N 240 -30 240 120 { lab=A1n}
-C {devices/ipin.sym} -65 35 0 0 {name=p2 lab=A0}
-C {devices/ipin.sym} -65 60 0 0 {name=p3 lab=A0n}
-C {devices/ipin.sym} -65 90 0 0 {name=p4 lab=A1}
-C {devices/ipin.sym} -65 120 0 0 {name=p5 lab=A1n}
+N 270 -40 270 0 { lab=#net1}
+N 270 -40 390 -40 { lab=#net1}
+N 390 -40 390 -0 { lab=#net1}
+N 15 -30 15 35 { lab=A0}
+N 15 35 15 130 { lab=A0}
+N 255 60 255 130 { lab=A0}
+N -60 205 75 205 { lab=A1}
+N 75 130 75 205 { lab=A1}
+N 75 205 190 205 { lab=A1}
+N 190 205 195 205 { lab=A1}
+N 195 130 195 205 { lab=A1}
+N 180 -30 180 130 { lab=A1}
+N 180 130 195 130 { lab=A1}
+N 315 130 315 235 { lab=A1n}
+N -60 235 315 235 { lab=A1n}
+N 315 235 435 235 { lab=A1n}
+N 435 130 435 235 { lab=A1n}
+N 315 15 315 130 { lab=A1n}
+N 240 15 315 15 { lab=A1n}
+N 240 -30 240 15 { lab=A1n}
+N -60 -90 15 -90 { lab=A0}
+N 15 -90 15 -30 { lab=A0}
+N -60 -65 75 -65 { lab=A0n}
+N 75 -65 75 -30 { lab=A0n}
+N 45 -45 45 -0 { lab=#net2}
+N 45 -45 150 -45 { lab=#net2}
+N 150 -45 150 -0 { lab=#net2}
+N 75 -65 420 -65 { lab=A0n}
+N 420 -65 420 -30 { lab=A0n}
+N 15 -90 360 -90 { lab=A0}
+N 360 -90 360 -30 { lab=A0}
+N -15 -0 -15 45 { lab=#net3}
+N -15 45 45 45 { lab=#net3}
+N 45 45 45 160 { lab=#net3}
+N 165 85 165 160 { lab=#net4}
+N 105 0 105 70 { lab=#net4}
+N 165 70 165 85 { lab=#net4}
+N 105 70 165 70 { lab=#net4}
+N 75 -30 75 115 { lab=A0n}
+N 75 115 135 115 { lab=A0n}
+N 135 115 135 130 { lab=A0n}
+N 360 -30 360 55 { lab=A0}
+N 255 55 360 55 { lab=A0}
+N 255 55 255 60 { lab=A0}
+N 330 0 330 90 { lab=Q2}
+N 285 90 330 90 { lab=Q2}
+N 285 90 285 160 { lab=Q2}
+N 420 -30 420 95 { lab=A0n}
+N 375 95 420 95 { lab=A0n}
+N 375 95 375 130 { lab=A0n}
+N 450 0 450 120 { lab=Q3}
+N 405 120 450 120 { lab=Q3}
+N 405 120 405 160 { lab=Q3}
+N 455 95 480 95 { lab=Q3}
+N 450 95 455 95 { lab=Q3}
+N 330 75 480 75 { lab=Q2}
+C {devices/ipin.sym} -60 -90 0 0 {name=p2 lab=A0}
+C {devices/ipin.sym} -60 -65 0 0 {name=p3 lab=A0n}
+C {devices/ipin.sym} -60 205 0 0 {name=p4 lab=A1}
+C {devices/ipin.sym} -60 235 0 0 {name=p5 lab=A1n}
 C {madvlsi/pmos3.sym} 240 0 1 0 {name=M2
 L=0.15
 W=4
@@ -74,11 +87,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/opin.sym} 480 35 0 0 {name=p7 lab=Q0}
-C {devices/opin.sym} 480 55 0 0 {name=p8 lab=Q1}
+C {devices/opin.sym} 480 25 0 0 {name=p7 lab=Q0}
+C {devices/opin.sym} 480 45 0 0 {name=p8 lab=Q1}
 C {devices/opin.sym} 480 75 0 0 {name=p9 lab=Q2}
 C {devices/opin.sym} 480 95 0 0 {name=p10 lab=Q3}
-C {devices/iopin.sym} -120 -75 2 0 {name=p1 lab=VP}
+C {devices/iopin.sym} -120 -150 2 0 {name=p1 lab=VP}
 C {devices/iopin.sym} -120 290 2 0 {name=p6 lab=VN}
 C {madvlsi/pmos3.sym} 180 0 3 1 {name=M1
 L=0.15
