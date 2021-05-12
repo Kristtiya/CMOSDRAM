@@ -18,8 +18,8 @@ N 375 -355 555 -355 { lab=Q1}
 N 375 -315 610 -315 { lab=Q2}
 N 375 -275 670 -275 { lab=Q3}
 N 705 -315 765 -315 { lab=#net1}
-N 650 -355 765 -355 { lab=VP}
-N 595 -395 765 -395 { lab=#net2}
+N 650 -355 765 -355 { lab=#net2}
+N 595 -395 765 -395 { lab=#net3}
 N 540 -360 540 -240 { lab=GND}
 N 510 -240 710 -240 { lab=GND}
 N 595 -320 595 -240 { lab=GND}
@@ -27,8 +27,8 @@ N 650 -280 650 -240 { lab=GND}
 N 540 -445 850 -445 { lab=VP}
 N 850 -445 850 -435 { lab=VP}
 N 710 -445 710 -310 { lab=VP}
-N 650 -445 650 -350 { lab=VP}
 N 540 -445 540 -430 { lab=VP}
+N 595 -390 610 -390 { lab=VP}
 C {madvlsi/vsource.sym} -235 -360 0 0 {name=VP
 value=1.8}
 C {madvlsi/gnd.sym} -235 -330 0 0 {name=l2 lab=GND}
@@ -67,10 +67,6 @@ value="pulse(0 1.8 0n 1n 1n 30n 64n)"}
 C {madvlsi/gnd.sym} -235 -105 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 105 -355 1 0 {name=l9 sig_type=std_logic lab=Dn0}
 C {devices/lab_pin.sym} 125 -275 1 0 {name=l11 sig_type=std_logic lab=Dn1}
-C {madvlsi/capacitor.sym} 485 -425 2 0 {name=C1
-value=1p
-m=1}
-C {madvlsi/gnd.sym} 485 -455 2 0 {name=l14 lab=GND}
 C {/home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Schematic/PullUpTreeDecoder.sym} 740 -315 0 0 {name = X2}
 C {/home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Schematic/inverter.sym} 460 -395 0 0 {name = X5}
 C {/home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Schematic/inverter.sym} 515 -355 0 0 {name = X6}
@@ -79,8 +75,13 @@ C {/home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Schematic/inverter.sym} 630 -2
 C {madvlsi/gnd.sym} 510 -240 0 0 {name=l15 lab=GND}
 C {madvlsi/vdd.sym} 540 -445 0 0 {name=l16 lab=VP}
 C {madvlsi/gnd.sym} 850 -235 0 0 {name=l17 lab=GND}
-C {devices/lab_pin.sym} 935 -395 2 0 {name=l18 sig_type=std_logic lab=W1}
-C {devices/lab_pin.sym} 935 -355 2 0 {name=l19 sig_type=std_logic lab=W2}
-C {devices/lab_pin.sym} 935 -315 2 0 {name=l26 sig_type=std_logic lab=W3}
-C {devices/lab_pin.sym} 935 -275 2 0 {name=l27 sig_type=std_logic lab=W4}
-C {madvlsi/vdd.sym} 595 -390 0 0 {name=l29 lab=VP}
+C {devices/lab_pin.sym} 935 -395 2 0 {name=l18 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} 935 -315 2 0 {name=l19 sig_type=std_logic lab=W2}
+C {devices/lab_pin.sym} 935 -275 2 0 {name=l26 sig_type=std_logic lab=W3}
+C {devices/lab_pin.sym} 935 -355 2 0 {name=l27 sig_type=std_logic lab=W1}
+C {madvlsi/vdd.sym} 610 -390 0 0 {name=l29 lab=VP}
+C {madvlsi/vdd.sym} 650 -350 0 0 {name=l30 lab=VP}
+C {madvlsi/capacitor.sym} 480 -425 2 0 {name=C1
+value=1p
+m=1}
+C {madvlsi/gnd.sym} 480 -455 2 0 {name=l14 lab=GND}

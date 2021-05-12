@@ -1,0 +1,23 @@
+* SPICE3 file created from /home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Magic/PullUpTree.ext - technology: sky130A
+
+
+* Top level circuit /home/madvlsi/Desktop/CMOSDRAM/DRAM_Components/Magic/PullUpTree
+
+X0 VP A0A1n Q2 VP sky130_fd_pr__pfet_01v8 ad=1.2e+13p pd=5.4e+07u as=2e+12p ps=9e+06u w=4e+06u l=150000u
+X1 VP VP Q3 VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2e+12p ps=9e+06u w=4e+06u l=150000u
+X2 Q0 VP VP VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=9e+06u as=0p ps=0u w=4e+06u l=150000u
+X3 VN VN Q1 VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=3e+07u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X4 Q3 A0nA1n VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=5e+06u as=0p ps=0u w=2e+06u l=150000u
+X5 Q2 VN VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=5e+06u as=0p ps=0u w=2e+06u l=150000u
+X6 Q0 VN VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=5e+06u as=0p ps=0u w=2e+06u l=150000u
+X7 Q1 A0nA1 VP VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=9e+06u as=0p ps=0u w=4e+06u l=150000u
+X8 Q1 A0nA1 VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X9 VN VN Q3 VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X10 Q3 A0nA1n VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X11 VN A0A1 Q0 VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X12 Q2 VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X13 VP A0A1 Q0 VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X14 VP VP Q1 VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X15 VN A0A1n Q2 VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.end
+

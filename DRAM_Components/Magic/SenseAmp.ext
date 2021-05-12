@@ -1,0 +1,33 @@
+timestamp 1620769603
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "En" 1285 123.45 -200 180 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 1660 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n170_210#" 1703 1351.8 -170 210 ndif 0 0 0 0 0 0 0 0 105000 2500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87200 2340 0 0 0 0 0 0 0 0 0 0 0 0
+node "Even" 2013 1210.29 -30 370 ndif 0 0 0 0 0 0 0 0 35000 900 12000 440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1600 0 0 60800 2340 0 0 0 0 0 0 0 0 0 0 0 0
+node "Odd" 2141 1263.62 70 340 p 0 0 0 0 0 0 0 0 35000 900 12000 440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28000 1760 0 0 60800 2340 0 0 0 0 0 0 0 0 0 0 0 0
+node "VP" 10087 1304.05 -200 870 nw 0 0 0 0 160000 2000 0 0 12000 440 36000 1320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26000 1520 0 0 50000 1920 80000 1800 0 0 0 0 0 0 0 0 0 0
+substrate "VN" 0 0 -170 -20 ppd 0 0 0 0 0 0 0 0 140000 3400 70000 1600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39800 2440 0 0 191200 4000 576000 3040 0 0 0 0 0 0 0 0 0 0
+cap "VP" "a_n170_210#" 12.5714
+cap "Odd" "Even" 345.117
+cap "Even" "a_n170_210#" 316.8
+cap "VP" "Even" 414.168
+cap "Odd" "a_n170_210#" 257.956
+cap "Odd" "VP" 484.108
+device msubckt sky130_fd_pr__nfet_01v8 -170 180 -169 181 l=30 w=700 "VN" "En" 60 0 "VN" 700 0 "a_n170_210#" 700 0
+device msubckt sky130_fd_pr__nfet_01v8 330 370 331 371 l=30 w=350 "VN" "VN" 60 0 "Odd" 350 0 "VN" 350 0
+device msubckt sky130_fd_pr__nfet_01v8 200 370 201 371 l=30 w=350 "VN" "Even" 60 0 "a_n170_210#" 350 0 "Odd" 350 0
+device msubckt sky130_fd_pr__nfet_01v8 70 370 71 371 l=30 w=350 "VN" "Odd" 60 0 "Even" 350 0 "a_n170_210#" 350 0
+device msubckt sky130_fd_pr__nfet_01v8 -60 370 -59 371 l=30 w=350 "VN" "VN" 60 0 "VN" 350 0 "Even" 350 0
+device msubckt sky130_fd_pr__pfet_01v8 330 910 331 911 l=30 w=120 "VP" "VP" 60 0 "Odd" 120 0 "VP" 120 0
+device msubckt sky130_fd_pr__pfet_01v8 200 910 201 911 l=30 w=120 "VP" "Even" 60 0 "VP" 120 0 "Odd" 120 0
+device msubckt sky130_fd_pr__pfet_01v8 70 910 71 911 l=30 w=120 "VP" "Odd" 60 0 "Even" 120 0 "VP" 120 0
+device msubckt sky130_fd_pr__pfet_01v8 -60 910 -59 911 l=30 w=120 "VP" "VP" 60 0 "VP" 120 0 "Even" 120 0
+subcap "a_n170_210#" -1292.36
+subcap "Even" -682.496
+subcap "Odd" -543.419
+subcap "VP" -1004.05

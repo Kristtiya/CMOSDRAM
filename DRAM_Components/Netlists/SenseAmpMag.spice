@@ -1,0 +1,16 @@
+* SPICE3 file created from SenseAmp.ext - technology: sky130A
+
+
+* Top level circuit SenseAmp
+
+X0 VP Odd Even VP sky130_fd_pr__pfet_01v8 ad=9e+11p pd=6.6e+06u as=3e+11p ps=2.2e+06u w=600000u l=150000u
+X1 VP VP Odd VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3e+11p ps=2.2e+06u w=600000u l=150000u
+X2 Even VN VN VN sky130_fd_pr__nfet_01v8 ad=8.75e+11p pd=4.5e+06u as=3.5e+12p ps=1.7e+07u w=1.75e+06u l=150000u
+X3 a_n170_210# En VN VN sky130_fd_pr__nfet_01v8 ad=2.625e+12p pd=1.25e+07u as=0p ps=0u w=3.5e+06u l=150000u
+X4 Even VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=600000u l=150000u
+X5 Odd Even a_n170_210# VN sky130_fd_pr__nfet_01v8 ad=8.75e+11p pd=4.5e+06u as=0p ps=0u w=1.75e+06u l=150000u
+X6 a_n170_210# Odd Even VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.75e+06u l=150000u
+X7 VN VN Odd VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.75e+06u l=150000u
+X8 Odd Even VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=600000u l=150000u
+.end
+
